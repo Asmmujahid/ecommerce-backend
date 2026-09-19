@@ -36,6 +36,7 @@ Route::prefix('seller')
         'role:seller',
         'seller.approved',
     ])
+    ->name('seller.')
     ->group(function () {
 
         // =================================================

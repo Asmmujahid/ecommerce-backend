@@ -29,10 +29,8 @@ use App\Http\Controllers\Api\Admin\CouponController;
 */
 
 Route::prefix('admin')
-    ->middleware([
-        'auth:sanctum',
-        'role:admin',
-    ])
+    ->middleware(['auth:sanctum', 'role:admin'])
+    ->name('admin.')
     ->group(function () {
 
         // =================================================
