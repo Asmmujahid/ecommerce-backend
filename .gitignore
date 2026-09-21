@@ -15,7 +15,21 @@ auth.json
 npm-debug.log
 yarn-error.log
 
-/public/storage
+/public/storage/*
+!/public/storage/
+!/public/storage/banners/
+!/public/storage/banners/*
+!/public/storage/brand/
+!/public/storage/brand/*
+!/public/storage/categories/
+!/public/storage/categories/*
+!/public/storage/products/
+!/public/storage/products/*
+!/public/storage/thumbnail/
+!/public/storage/thumbnail/*
+!/public/storage/logo/
+!/public/storage/logo/*
+
 /storage/*.key
 
 /storage/framework/cache/*
