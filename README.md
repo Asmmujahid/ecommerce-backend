@@ -6,16 +6,6 @@ The API provides authentication, role-based access control, product management, 
 
 ---
 
-## 🚀 Live API
-
-**Production API:**
-
-https://ecommerce-backend-production-2736.up.railway.app/
-
-> This URL points to the Laravel API backend. Individual endpoints may require specific HTTP methods and authentication, so opening an API endpoint directly in a browser may return an HTTP method or authentication message.
-
----
-
 ## 📌 Project Overview
 
 This backend was developed as part of a full-stack e-commerce application and is designed to provide a structured API layer for a React frontend.
@@ -211,7 +201,6 @@ Product APIs support:
 
 ## 🏗️ Backend Architecture
 
-```text
 React Frontend
       │
       │ HTTP / REST API
@@ -240,13 +229,11 @@ React Frontend
 │ Coupons                 │
 │ Addresses               │
 └─────────────────────────┘
-```
 
 ---
 
 ## 🗂️ Backend Project Structure
 
-```text
 ecommerce-backend/
 │
 ├── app/
@@ -275,7 +262,6 @@ ecommerce-backend/
 ├── artisan
 ├── composer.json
 └── README.md
-```
 
 ---
 
@@ -283,7 +269,6 @@ ecommerce-backend/
 
 The application uses **Laravel Sanctum** for API authentication.
 
-```text
 User
  │
  ▼
@@ -304,7 +289,6 @@ Role & Permission Middleware
  ├── Admin
  ├── Seller
  └── Customer
-```
 
 Protected API resources are accessible according to the authenticated user's role and permissions.
 
@@ -314,7 +298,6 @@ Protected API resources are accessible according to the authenticated user's rol
 
 The backend contains models for the application's major e-commerce operations:
 
-```text
 User
 Product
 Category
@@ -335,7 +318,6 @@ ProductImage
 ProductVariant
 Inventory
 ReturnRequest
-```
 
 These models use Laravel Eloquent relationships to represent the application's database structure and business logic.
 
@@ -394,80 +376,58 @@ Testing included:
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/Asmmujahid/ecommerce-backend.git
-```
 
 Navigate into the project:
 
-```bash
 cd ecommerce-backend
-```
 
 ### 2. Install dependencies
 
-```bash
 composer install
-```
 
 ### 3. Create the environment file
 
 Windows:
 
-```bash
 copy .env.example .env
-```
 
 Linux/macOS:
 
-```bash
 cp .env.example .env
-```
 
 ### 4. Generate the application key
 
-```bash
 php artisan key:generate
-```
 
 ### 5. Configure MySQL
 
 Update your `.env` file:
 
-```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=ecommerce_db
 DB_USERNAME=root
 DB_PASSWORD=
-```
 
 Use your own local database credentials.
 
 ### 6. Run migrations
 
-```bash
 php artisan migrate
-```
 
 ### 7. Run database seeders
 
-```bash
 php artisan db:seed
-```
 
 ### 8. Start the Laravel development server
 
-```bash
 php artisan serve
-```
 
 The API will normally be available at:
 
-```text
 http://127.0.0.1:8000
-```
 
 ---
 
@@ -477,11 +437,9 @@ Sensitive configuration should never be committed to GitHub.
 
 Do **not** commit:
 
-```text
 .env
 vendor/
 node_modules/
-```
 
 The `.env.example` file should contain only configuration examples and must not contain real passwords, API keys, database credentials, or other secrets.
 
@@ -495,25 +453,7 @@ The React application communicates with this Laravel API using **Axios**.
 
 Example local API configuration:
 
-```env
 VITE_API_URL=http://127.0.0.1:8000/api
-```
-
-### Production Frontend
-
-https://ecommerce-frontend-nine-blue.vercel.app/
-
----
-
-## 🚀 Deployment
-
-The Laravel backend has been deployed to **Railway**.
-
-### Production Backend
-
-https://ecommerce-backend-production-2736.up.railway.app/
-
-The backend is configured to serve API requests consumed by the deployed React frontend.
 
 ---
 
@@ -554,11 +494,9 @@ This project demonstrates practical experience with:
 
 **Technologies:**
 
-```text
 Laravel • PHP • React • JavaScript • MySQL
 REST APIs • Tailwind CSS • Material UI
 Git • GitHub
-```
 
 This project was developed as a portfolio application to demonstrate full-stack development, REST API architecture, authentication, authorization, database design, and production deployment.
 
@@ -570,19 +508,11 @@ This project was developed as a portfolio application to demonstrate full-stack 
 
 Built separately with:
 
-```text
 React + Vite
 Redux Toolkit
 Material UI
 Tailwind CSS
 Axios
 React Hook Form
-```
-
-**Live Application:**
-
-https://ecommerce-frontend-nine-blue.vercel.app/
-
----
 
 ⭐ **Thank you for visiting this project!**
